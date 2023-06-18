@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment" >
+
+    <View
+        android:id="@+id/viewhomebackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/azul_tec"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBaseline_toTopOf="@id/homeTitle"
+    />
+
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:text="@string/sillas_en_todos_lados"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/varelaround_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:src="@drawable/simbolo_tec_white"
+        app:layout_constraintBottom_toBottomOf="@id/homeTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        
+    />
+    
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewhomebackground"
+        app:layout_constraintTop_toBottomOf="@+id/viewhomebackground" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_14sdp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_new_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_circle_outline_24"
+                app:backgroundTint="@color/azul_tec_oficial"
+                app:tint="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+            
+            <TextView
+                android:id="@+id/textViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reservaciones_recientes"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+            />
+
+            <LinearLayout
+                android:id="@+id/layoutbookings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViews"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/locimage"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/rectoria" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutbookings2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@id/layoutbookings"
+                app:layout_constraintTop_toBottomOf="@id/textViews"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text="@string/rector_a"
+                    android:id="@+id/acceso"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:id="@+id/location"
+                    android:text="@string/av_eugenio_garza_sada"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="@string/_31_05_2023"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:id="@+id/time"
+                    android:text="@string/_1_00_pm"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+    </com.google.android.material.card.MaterialCardView>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:background="@color/gray"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:queryHint="Buscar"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/cardHeader" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@id/fab_new_booking"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/cardHeader" >
+
+
+
+        <LinearLayout
+            android:id="@+id/ubicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/dashboard_item1"/>
+            <include layout="@layout/dashboard_item2"/>
+            <include layout="@layout/dashboard_item3"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

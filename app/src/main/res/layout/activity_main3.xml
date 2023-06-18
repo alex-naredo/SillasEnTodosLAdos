@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/azul_tec"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:scaleType="fitXY"
+        android:contentDescription="Icon"
+        android:src="@drawable/baseline_warning_amber_24" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:textColor="@color/azul_tec_oficial"
+                android:textSize="20sp"
+                android:text="Lineamientos del Servicio"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/azul_tec_oficial"
+                android:textSize="18sp"
+                android:text="Al solicitar este servicio me compreto a: \n - La devolución de los equipos en los tiempos establecidos. \n
+- El cuidado de los equipos y herramientas de apoyo (así como en caso de daño efectuar el pago correspondiente).\n
+- Los equipos y herramientas de apoyo son de uso exclusivo para personas con discapacidad, en caso contrario podrá ser acreedor a una sanción. \n
+- Procuraré que otra persona sea la responsable de empujarme en la silla de ruedas. \n
+- No permitiré que otros hagan uso inapropiado de la silla de ruedas. \n
+- El préstamo del servicio no será mayor a 2 semanas. \n
+- En caso de necesitar una extensión de incapacidad, deberé solicitar nuevamente el préstamo.  \n\n
+En caso de no cumplir alguno de los puntos anteriores, accedo a que se me haga un cargo automático a mi cuenta de alumno por:  \n
+
+1. $50.00 por cada hora de retraso en la entrega. \n
+2. $500.00 por permitir el uso de la silla a aquellas personas que no lo necesiten o que no tienen autorización, por mal uso de las mismas o por dejarlas desatendidas. \n
+3. En caso pérdida o maltrato de la silla de ruedas me obligo a cubrir el costo total que se requiera para reparación. \n \n
+Contacto: inclusion.mty@servicios.tec.mx o extensión: 3629.  Centro de Atención en Centrales Sur 4° Piso."
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="He leído y acepto los lineamientos."
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>

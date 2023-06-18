@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "940048971645",
+    "project_id": "sillas-tec",
+    "storage_bucket": "sillas-tec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940048971645:android:0da1b5135f875387b3fe14",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940048971645-vmt81o9th233tojpkv92r1tdf3k4s17c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwVqPgDVU0okMWJoqOSi7ilSvmnG9Gtqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940048971645-vmt81o9th233tojpkv92r1tdf3k4s17c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

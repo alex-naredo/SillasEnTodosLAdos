@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">Reserva</string>
+    <string name="title_dashboard">Escaner</string>
+    <string name="title_notifications">Comunidad</string>
+    <string name="reserva">Reserva</string>
+    <string name="reservaciones_recientes">Reservaciones recientes</string>
+    <string name="rector_a">Rectoría</string>
+    <string name="sillas_en_todos_lados">SILLAS EN TODOS LADOS</string>
+    <string name="_31_05_2023">31/05/2023</string>
+    <string name="av_eugenio_garza_sada">Av. Eugenio Garza Sada</string>
+    <string name="_1_00_pm">1:00 PM</string>
+    <string name="sillas_disponibles_2">Sillas: 2</string>
+</resources>

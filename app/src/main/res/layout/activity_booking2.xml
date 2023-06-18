@@ -1,0 +1,296 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/azul_tec"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitXY"
+        android:contentDescription="Icon"
+        android:src="@drawable/baseline_wheelchair_pickup_24" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:hint="    Nombre Completo"
+                android:textSize="@dimen/_15sdp"
+                android:background="@drawable/rounded_edittext_border" />
+
+            <EditText
+                android:id="@+id/editEmailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:hint="    Matrícula / Nómina"
+                android:textSize="@dimen/_15sdp"
+                android:background="@drawable/rounded_edittext_border" />
+
+            <EditText
+                android:id="@+id/editCarrera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:hint="    Carrera / Departamento"
+                android:textSize="@dimen/_15sdp"
+                android:background="@drawable/rounded_edittext_border" />
+
+
+
+            <EditText
+                android:id="@+id/editTipoDiscapacidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:hint="    Tipo de Discapacidad"
+                android:textSize="@dimen/_15sdp"
+                android:background="@drawable/rounded_edittext_border" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:hint="(ej. Motriz, auditiva, TEA, etc. o N/A) "
+                android:textColor="@color/azul_tec_oficial"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewDiscapacidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="Discapacidad"
+                android:drawablePadding="8dp"
+                android:dropDownHeight="wrap_content"
+                android:dropDownVerticalOffset="2dp"
+                android:dropDownWidth="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/buttonSelectFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sube tu comprobante médico" />
+
+            <TextView
+                android:id="@+id/txtFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left"
+                    android:text="Fecha de inicio de uso:"
+                    android:textColor="@color/azul_tec_oficial"
+                    android:textSize="19.50sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonSelectDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_calendar_month_24"
+                        android:text="Fecha"
+                        android:drawablePadding="8dp" />
+
+                    <Button
+                        android:id="@+id/buttonSelectTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Hora"
+                        android:drawableLeft="@drawable/sharp_access_time_24"
+                        android:drawablePadding="8dp"
+                        android:layout_marginStart="16dp" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textViewSelectedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/azul_tec_oficial"
+                    android:hint="Fecha: "
+                    />
+
+                <TextView
+                    android:id="@+id/textViewSelectedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/azul_tec_oficial"
+                    android:hint="Hora: "/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleend"
+                    android:gravity="left"
+                    android:text="Fecha de termino de uso:"
+                    android:textColor="@color/azul_tec_oficial"
+                    android:textSize="19.50sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonSelectDateEnd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_calendar_month_24"
+                        android:text="Fecha"
+                        android:drawablePadding="8dp" />
+
+                    <Button
+                        android:id="@+id/buttonSelectTimeEnd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Hora"
+                        android:drawableLeft="@drawable/sharp_access_time_24"
+                        android:drawablePadding="8dp"
+                        android:layout_marginStart="16dp" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textViewSelectedDateEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/azul_tec_oficial"
+                    android:hint="Fecha: "
+                    />
+
+                <TextView
+                    android:id="@+id/textViewSelectedTimeEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/azul_tec_oficial"
+                    android:hint="Hora: "/>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Acceso"
+                android:drawablePadding="2dp"
+                android:dropDownHeight="wrap_content"
+                android:dropDownVerticalOffset="2dp"
+                android:dropDownWidth="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="12dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Sunflower Landyard Card Holder" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_local_florist_24"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:tint="@color/azul_tec_oficial" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonSendEmail"
+                android:backgroundTint="@color/azul_tec_oficial"
+                android:text="Confirmar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>
+

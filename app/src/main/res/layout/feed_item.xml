@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/img_4"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profile Image" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/text_view_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inclusión y Accesibilidad Tec"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 hours ago"
+                android:textSize="1sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text_view_caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_view_post"
+                android:layout_marginTop="3dp"
+                android:background="#FFFFFF"
+                android:text="¡Entérate de más! Síguenos en Instagram como @inclusiontec"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image_view_post"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="Post Image"
+                android:scaleType="fitCenter"
+                android:src="@drawable/instagram" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view_profile4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/img_4"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profile Image" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/text_view_username4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inclusión y Accesibilidad Tec"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_timestamp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 hours ago"
+                android:textSize="1sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text_view_caption4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_view_post"
+                android:layout_marginTop="3dp"
+                android:background="#FFFFFF"
+                android:text="¿Ya lo sabías? ¡El 3 de diciembre se celebra el día de las personas con discapacidad!"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image_view_post4"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="Post Image"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="800dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view_profile3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/me"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profile Image" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/text_view_username3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alexia Naredo"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_timestamp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 hours ago"
+                android:textSize="1sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text_view_caption3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_view_post"
+                android:layout_marginTop="3dp"
+                android:background="#FFFFFF"
+                android:text="Saliendo del Foro de Inclusión :)"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image_view_post3"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="Post Image"
+                android:scaleType="fitXY"
+                android:src="@drawable/forooo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="1200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_view_profile2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/img_4"
+        android:scaleType="centerCrop"
+        android:contentDescription="Profile Image" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/text_view_username2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inclusión y Accesibilidad Tec"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_timestamp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 hours ago"
+            android:textSize="1sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/text_view_caption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view_post"
+            android:layout_marginTop="3dp"
+            android:background="#FFFFFF"
+            android:text="¿Ya lo sabías? ¡El 2 de abril se celebra el día de la concientización del autismo!"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_view_post2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="Post Image"
+            android:scaleType="fitXY"
+            android:src="@drawable/inclus" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
